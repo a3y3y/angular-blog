@@ -13,7 +13,7 @@
   [ngClass]="{invalid: form.get('email')?.touched && form.get('email')?.invalid}"
   >
     <label for="email">Email:</label>
-    <input type="email" type="email" formControlName="email">
+    <input id="email" type="email" formControlName="email">
     <div
     *ngIf="form.get('email')?.touched && form.get('email')?.invalid"
     class="validation"
